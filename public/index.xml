@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sopcos | The Industrial Trust Protocol</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Sopcos | The Industrial Trust Protocol</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/litepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/litepaper/</guid>
+      <description>&lt;h1 id=&#34;sopcos-litepaper-v20&#34;&gt;SOPCOS LITEPAPER v2.0&lt;/h1&gt;&#xA;&lt;h3 id=&#34;the-industrial-trust-protocol&#34;&gt;The Industrial Trust Protocol&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-executive-anchor&#34;&gt;🛡️ Executive Anchor&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Sopcos is the industrial operating layer that makes machine decisions legally ownable.&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Industry 4.0 focused on speed. Industry 5.0 focused on human-machine collaboration. Sopcos completes the missing piece: &lt;strong&gt;Liability&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;“We combine the speed of automation with the immutability of blockchain and the certainty of law.”&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-the-concept-why-sopcos-philosophy&#34;&gt;1. The Concept: Why Sopcos? (Philosophy)&lt;/h2&gt;&#xA;&lt;p&gt;Current industrial systems focus on &amp;ldquo;Data&amp;rdquo;; Sopcos focuses on the &lt;strong&gt;&amp;ldquo;Verdict.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

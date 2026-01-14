@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | SOPCOS</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sopcos: { dark: '#121212', panel: '#1E1E1E', amber: '#FFB300', cyan: '#00E5FF', steel: '#94A3B8' }
+            },
+            fontFamily: { mono: ['monospace'], sans: ['sans-serif'] }
+          }
+        }
+      }
+    </script>
+    <style>
+        body { background-color: #121212; color: #E0E0E0; }
+        .prose h1, .prose h2, .prose h3 { color: #E0E0E0; font-family: monospace; }
+        .prose strong { color: #FFB300; }
+        .prose blockquote { border-left-color: #00E5FF; color: #94A3B8; }
+    </style>
+</head>
+<body class="font-sans antialiased min-h-screen flex flex-col bg-sopcos-dark">
+
+    <nav class="w-full border-b border-sopcos-steel/20 p-6 flex justify-between items-center bg-sopcos-dark">
+        <a href="/" class="text-2xl font-mono font-bold tracking-tighter text-white hover:text-sopcos-amber transition">
+            < SOPCOS_HOME
+        </a>
+        <div class="flex gap-2">
+            {{ range .Page.AllTranslations }}
+            <a href="{{ .Permalink }}" class="font-mono text-xs border border-sopcos-steel/30 px-2 py-1 rounded hover:bg-sopcos-steel/20 transition {{ if eq .Language.Lang $.Site.Language.Lang }}text-sopcos-amber border-sopcos-amber/50{{ else }}text-gray-500{{ end }}">
+                {{ .Language.Lang | upper }}
+            </a>
+            {{ end }}
+        </div>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-4 py-12 max-w-4xl">
+        <article class="prose prose-invert prose-lg max-w-none prose-headings:font-bold prose-a:text-sopcos-cyan hover:prose-a:text-white">
+            <h1 class="text-4xl md:text-5xl mb-4 text-sopcos-amber">{{ .Title }}</h1>
+            <p class="text-xl text-gray-400 mb-8 border-b border-gray-800 pb-8">{{ .Params.description }}</p>
+            
+            {{ .Content }}
+        </article>
+    </main>
+
+    <footer class="w-full border-t border-sopcos-steel/20 p-8 text-center text-gray-600 font-mono text-sm">
+        END_OF_FILE | SOPCOS v1.3
+    </footer>
+
+</body>
+</html>

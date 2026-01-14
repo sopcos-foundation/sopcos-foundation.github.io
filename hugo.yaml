@@ -1,0 +1,40 @@
+baseURL: 'https://sopcos.github.io/'
+languageCode: 'en-us'
+title: 'Sopcos | The Industrial Trust Protocol'
+theme: [] 
+
+
+defaultContentLanguage: 'en'
+languages:
+  en:
+    languageName: 'English'
+    weight: 1
+    contentDir: 'content/en'
+    params:
+      description: "Speed requires reflex, trust requires record, liability requires signature."
+  tr:
+    languageName: 'Türkçe'
+    weight: 2
+    contentDir: 'content/tr'
+    params:
+      description: "Hız refleks ister, güven kayıt ister, sorumluluk imza ister."
+
+
+params:
+  design:
+    theme: "dark-industrial"
+    colors:
+      bg: "#121212"        # Deep Anthracite
+      primary: "#FFB300"   # Amber (Hot Path)
+      secondary: "#00E5FF" # Cyan (Cold Path)
+      text: "#E0E0E0"      # Platinum
+  
+ 
+  social:
+    github: "https://github.com/sopcos"
+    linkedin: "https://linkedin.com/company/sopcos"
+    
+markup:
+  goldmark:
+    renderer:
+      unsafe: true 

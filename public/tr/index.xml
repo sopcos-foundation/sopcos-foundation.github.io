@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sopcos | The Industrial Trust Protocol</title>
+    <link>http://localhost:1313/tr/</link>
+    <description>Recent content on Sopcos | The Industrial Trust Protocol</description>
+    <generator>Hugo</generator>
+    <language>tr</language>
+    <atom:link href="http://localhost:1313/tr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/tr/litepaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tr/litepaper/</guid>
+      <description>&lt;h1 id=&#34;sopcos-litepaper-v20&#34;&gt;SOPCOS LITEPAPER v2.0&lt;/h1&gt;&#xA;&lt;h3 id=&#34;the-industrial-trust-protocol-endüstriyel-güven-protokolü&#34;&gt;The Industrial Trust Protocol (Endüstriyel Güven Protokolü)&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-executive-anchor-yönetici-özeti&#34;&gt;🛡️ Executive Anchor (Yönetici Özeti)&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Sopcos, makinelerin verdiği kararları hukuken sahiplenilebilir hale getiren endüstriyel işletim katmanıdır.&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Endüstri 4.0 hıza, Endüstri 5.0 ise insan-makine işbirliğine odaklanır. Sopcos ise eksik kalan parçayı tamamlar: &lt;strong&gt;Sorumluluk (Liability)&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;“Biz, otomasyonun hızını; blokzincirin değişmezliği ve hukukun kesinliğiyle birleştiriyoruz.”&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-the-concept-neden-sopcos-felsefe&#34;&gt;1. The Concept: Neden Sopcos? (Felsefe)&lt;/h2&gt;&#xA;&lt;p&gt;Mevcut endüstriyel sistemler &amp;ldquo;Veri&amp;quot;ye (Data) odaklanır; Sopcos ise &lt;strong&gt;&amp;ldquo;Karar&amp;quot;a (Verdict)&lt;/strong&gt; odaklanır.&lt;/p&gt;&#xA;&lt;p&gt;Bir kaza olduğunda SCADA logları size &amp;ldquo;ne olduğunu&amp;rdquo; söyleyebilir, ancak &amp;ldquo;neden olduğunu&amp;rdquo; ve &amp;ldquo;sorumluluğun kimde olduğunu&amp;rdquo; yasal kesinlikle kanıtlayamaz.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

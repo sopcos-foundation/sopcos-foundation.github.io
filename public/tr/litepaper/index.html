@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> | SOPCOS</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sopcos: { dark: '#121212', panel: '#1E1E1E', amber: '#FFB300', cyan: '#00E5FF', steel: '#94A3B8' }
+            },
+            fontFamily: { mono: ['monospace'], sans: ['sans-serif'] }
+          }
+        }
+      }
+    </script>
+    <style>
+        body { background-color: #121212; color: #E0E0E0; }
+        .prose h1, .prose h2, .prose h3 { color: #E0E0E0; font-family: monospace; }
+        .prose strong { color: #FFB300; }
+        .prose blockquote { border-left-color: #00E5FF; color: #94A3B8; }
+    </style>
+</head>
+<body class="font-sans antialiased min-h-screen flex flex-col bg-sopcos-dark">
+
+    <nav class="w-full border-b border-sopcos-steel/20 p-6 flex justify-between items-center bg-sopcos-dark">
+        <a href="/" class="text-2xl font-mono font-bold tracking-tighter text-white hover:text-sopcos-amber transition">
+            &lt; SOPCOS_HOME
+        </a>
+        <div class="flex gap-2">
+            
+            <a href="http://localhost:1313/litepaper/" class="font-mono text-xs border border-sopcos-steel/30 px-2 py-1 rounded hover:bg-sopcos-steel/20 transition text-gray-500">
+                EN
+            </a>
+            
+            <a href="http://localhost:1313/tr/litepaper/" class="font-mono text-xs border border-sopcos-steel/30 px-2 py-1 rounded hover:bg-sopcos-steel/20 transition text-sopcos-amber border-sopcos-amber/50">
+                TR
+            </a>
+            
+        </div>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-4 py-12 max-w-4xl">
+        <article class="prose prose-invert prose-lg max-w-none prose-headings:font-bold prose-a:text-sopcos-cyan hover:prose-a:text-white">
+            <h1 class="text-4xl md:text-5xl mb-4 text-sopcos-amber"></h1>
+            <p class="text-xl text-gray-400 mb-8 border-b border-gray-800 pb-8"></p>
+            
+            <h1 id="sopcos-litepaper-v20">SOPCOS LITEPAPER v2.0</h1>
+<h3 id="the-industrial-trust-protocol-endüstriyel-güven-protokolü">The Industrial Trust Protocol (Endüstriyel Güven Protokolü)</h3>
+<hr>
+<h2 id="-executive-anchor-yönetici-özeti">🛡️ Executive Anchor (Yönetici Özeti)</h2>
+<blockquote>
+<p>&ldquo;Sopcos, makinelerin verdiği kararları hukuken sahiplenilebilir hale getiren endüstriyel işletim katmanıdır.&rdquo;</p>
+</blockquote>
+<p>Endüstri 4.0 hıza, Endüstri 5.0 ise insan-makine işbirliğine odaklanır. Sopcos ise eksik kalan parçayı tamamlar: <strong>Sorumluluk (Liability)</strong>.</p>
+<blockquote>
+<p>“Biz, otomasyonun hızını; blokzincirin değişmezliği ve hukukun kesinliğiyle birleştiriyoruz.”</p>
+</blockquote>
+<hr>
+<h2 id="1-the-concept-neden-sopcos-felsefe">1. The Concept: Neden Sopcos? (Felsefe)</h2>
+<p>Mevcut endüstriyel sistemler &ldquo;Veri&quot;ye (Data) odaklanır; Sopcos ise <strong>&ldquo;Karar&quot;a (Verdict)</strong> odaklanır.</p>
+<p>Bir kaza olduğunda SCADA logları size &ldquo;ne olduğunu&rdquo; söyleyebilir, ancak &ldquo;neden olduğunu&rdquo; ve &ldquo;sorumluluğun kimde olduğunu&rdquo; yasal kesinlikle kanıtlayamaz.</p>
+<p>Sopcos&rsquo;un temel tezi şudur: <strong>Hız refleks ister, güven kayıt ister, sorumluluk imza ister.</strong></p>
+<ul>
+<li><strong>Sopcos bir SCADA değildir;</strong> SCADA&rsquo;yı denetleyen bir noterdir.</li>
+<li><strong>Sopcos bir Yapay Zeka projesi değildir;</strong> Yapay Zeka&rsquo;yı güvenli bir kafese alan bir yönetim katmanıdır.</li>
+</ul>
+<hr>
+<h2 id="2-the-architecture-ekosistem-mimari">2. The Architecture: Ekosistem (Mimari)</h2>
+<p>Sopcos, tek bir yazılım değil, görevleri kesin çizgilerle ayrılmış dört ana organa sahip bir organizmadır:</p>
+<h3 id="-21-synapse-the-reflex--hot-path">🔌 2.1. SYNAPSE (The Reflex &amp; Hot Path)</h3>
+<p><strong>&ldquo;Sistemin Elleri ve Refleksleri.&rdquo;</strong> Makine ile fiziksel teması kuran uç (Edge) birimidir.</p>
+<ul>
+<li><strong>Görevi:</strong> <strong>SIP-013</strong> ile tanımlanmış &ldquo;Gerçekliği&rdquo; okur ve <strong>SIP-001</strong> politikalarını uygular.</li>
+<li><strong>Pre-Law:</strong> İnsan yorumuna açık olmayan, fizik ve mühendislik sınırlarını uygulayan mutlak kurallar.</li>
+<li><strong>Hot Path (Sıcak Yol):</strong> Kritik bir güvenlik ihlali (Örn: Sıcaklık &gt; Limit) algıladığında, kimseye sormadan, gecikmesiz (Real-time) ve deterministik olarak <strong>MÜDAHALE EDER</strong>.</li>
+</ul>
+<h3 id="-22-axon-the-cognition--cold-path--opsiyonel">🧠 2.2. AXON (The Cognition &amp; Cold Path) — Opsiyonel</h3>
+<p><strong>&ldquo;Sistemin Muhakeme Yeteneği.&rdquo;</strong> Karmaşık analizler ve kestirimci bakım için devreye giren &ldquo;Akıl Odası&quot;dır.</p>
+<ul>
+<li><strong>Bikamaral Zihin:</strong> Karar veren (Synapse) ile düşünen ama karar almayan (Axon) yapının bilinçli ayrımı.</li>
+<li><strong>Cold Path (Soğuk Yol):</strong> Acil olmayan verileri analiz eder (Örn: &ldquo;Titreşim artıyor, 1 hafta sonra rulman dağılabilir&rdquo;).</li>
+<li><strong>Silent Alarm (Gizlilik):</strong> <strong>SIP-017</strong> sayesinde, bulduğu kritik açıkları zincire ifşa etmez; yöneticisine şifreli &ldquo;Kırmızı Telefon&rdquo; hattından bildirir.</li>
+</ul>
+<h3 id="-23-core-ledger-the-immutable-record">🏛️ 2.3. CORE LEDGER (The Immutable Record)</h3>
+<p><strong>&ldquo;Sistemin Hafızası ve Noteri.&rdquo;</strong> Synapse ve Axon&rsquo;un ürettiği kararların, <strong>SIP-014 Vault</strong> mimarisi ile mühürlendiği L1 blokzincirdir.</p>
+<ul>
+<li><strong>Rolü:</strong> Karar vermez, yargılamaz; sadece <strong>kanıtlar ve susturur.</strong></li>
+<li><strong>Gücü:</strong> Fabrikanız yansa bile, kararlarınızın ve uyarılarınızın kanıtı bu zincirde sonsuza dek yaşar.</li>
+</ul>
+<h3 id="-24-idas-industrial-digital-assets">🆔 2.4. IDAS (Industrial Digital Assets)</h3>
+<p><strong>&ldquo;Makinelerin Dijital Kimliği.&rdquo;</strong> Fabrikanızdaki cihazlar artık sadece birer IP adresi değil, <strong>SIP-016</strong> standardına sahip birer Endüstriyel NFT&rsquo;dir.</p>
+<ul>
+<li><strong>İşlevi:</strong> Cihazın bakım geçmişi, mülkiyeti ve yetkileri (Lisanslar) bu kimliğe işlenir. Sahte parça veya yetkisiz yazılım sisteme giremez.</li>
+</ul>
+<hr>
+<h2 id="3-the-workflow-nasıl-çalışır-akış">3. The Workflow: Nasıl Çalışır? (Akış)</h2>
+<p>Sopcos, veriyi ihtiyaca göre iki farklı yoldan (Hot/Cold) geçirir:</p>
+<h3 id="-senaryo-1-acil-tehlike-hot-path">🔥 Senaryo 1: Acil Tehlike (Hot Path)</h3>
+<ul>
+<li><strong>Olay:</strong> Kazan basıncı 150 Bar&rsquo;a fırladı (Limit: 140).</li>
+<li><strong>Synapse:</strong> Refleks devreye girer. Yapay zekaya danışmaz.</li>
+<li><strong>Aksiyon:</strong> <strong>&lt;10ms</strong> içinde &ldquo;Vana Aç&rdquo; komutunu PLC&rsquo;ye gönderir.</li>
+<li><strong>Sonuç:</strong> Önce hayat kurtarır, sonra <strong>SIP-002</strong> gereği olayı zincire &ldquo;Müdahale Edildi&rdquo; olarak yazar.</li>
+</ul>
+<h3 id="-senaryo-2-derin-analiz-cold-path">❄️ Senaryo 2: Derin Analiz (Cold Path)</h3>
+<ul>
+<li><strong>Olay:</strong> Basınç normal ama ses sensöründe garip bir frekans var.</li>
+<li><strong>Axon:</strong> Veriyi alır, geçmişle kıyaslar. (Süre: Saniyeler/Dakikalar).</li>
+<li><strong>Aksiyon:</strong> &ldquo;Valf contası %80 aşınmış&rdquo; teşhisini koyar.</li>
+<li><strong>Sonuç:</strong> Bakım ekibine <strong>SIP-017</strong> üzerinden şifreli, &ldquo;Sadece Gözler İçin&rdquo; (For Your Eyes Only) bir bakım emri gönderir.</li>
+</ul>
+<hr>
+<h2 id="4-the-guarantee-güven-ve-sorumluluk">4. The Guarantee: Güven ve Sorumluluk</h2>
+<p>Sopcos, teknolojiden fazlasını; bir <strong>&ldquo;Hukuki Güvenlik Kalkanı&rdquo;</strong> sunar:</p>
+<ul>
+<li><strong>İnsan Müdahalesi (Override):</strong> Bir operatör sistemi bypass etmek isterse, Sopcos buna izin verir ancak <strong>SIP-006</strong> gereği ondan biyometrik bir imza alır: <strong>Confession of Liability (Geri alınamaz sorumluluk beyanı)</strong>. &ldquo;Sistemi durdurdum ve sorumluluğu alıyorum&rdquo; demeyen kimse sistemi durduramaz.</li>
+<li><strong>Öngörü Kanıtı (Foreknowledge):</strong> Bir kaza olmadan önce sistem sizi uyardı mı? <strong>SIP-005</strong> simülasyon kayıtları, &ldquo;Bilmiyordum&rdquo; savunmasını ortadan kaldırır.</li>
+<li><strong>Veri Egemenliği:</strong> Verileriniz üçüncü parti bulutlarda değil, <strong>SIP-014</strong> ile kendi &ldquo;Vault&quot;larınızda (Kasa) durur. Zincirde sadece bu verilerin &ldquo;Parmak İzi&rdquo; (Hash) bulunur.</li>
+</ul>
+<hr>
+<h2 id="5-conclusion-sonuç">5. Conclusion (Sonuç)</h2>
+<p>Sopcos; yapay zeka ve blokzinciri &ldquo;hype&rdquo; olmaktan çıkarıp, <strong>Endüstriyel Altyapı</strong> haline getirmiştir.</p>
+<p>Biz makinelerinizi akıllandırmıyoruz; biz makinelerinizle kurduğunuz ilişkiyi <strong>yasallaştırıyoruz</strong>.</p>
+<p><strong>Sopcos: Trust, Executed. (Güvenin İcrası.)</strong></p>
+
+        </article>
+    </main>
+
+    <footer class="w-full border-t border-sopcos-steel/20 p-8 text-center text-gray-600 font-mono text-sm">
+        END_OF_FILE | SOPCOS v1.3
+    </footer>
+
+</body>
+</html>

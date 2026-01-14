@@ -1,0 +1,41 @@
+[hero_title_suffix]
+other = "EXECUTED."
+
+[read_litepaper]
+other = "READ LITEPAPER v2.0"
+
+[init_demo]
+other = "> INIT_DEMO"
+
+[architecture_title]
+other = "THE_ARCHITECTURE"
+
+[architecture_desc]
+other = "Sopcos is not monolithic software; it is a cybernetic organism with 4 distinct organs."
+
+[synapse_desc]
+other = "The Reflex & Hot Path. <10ms latency."
+
+[axon_desc]
+other = "The Intelligence & Cold Path. Optional AI integration."
+
+[ledger_desc]
+other = "The Immutable Record. Proof of Liability."
+
+[idas_desc]
+other = "Industrial NFT. Click to inspect."
+
+[workflow_title]
+other = "THE_WORKFLOW"
+
+[workflow_desc]
+other = "Sopcos routes data through two distinct paths based on urgency. Toggle the switch to test modes."
+
+[guarantee_title]
+other = "THE_GUARANTEE"
+
+[guarantee_desc]
+other = "SIP-017 Protocol: Private communication on a public chain."
+
+[guarantee_slide]
+other = "Slide to decrypt."

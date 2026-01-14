@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> | SOPCOS</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sopcos: { dark: '#121212', panel: '#1E1E1E', amber: '#FFB300', cyan: '#00E5FF', steel: '#94A3B8' }
+            },
+            fontFamily: { mono: ['monospace'], sans: ['sans-serif'] }
+          }
+        }
+      }
+    </script>
+    <style>
+        body { background-color: #121212; color: #E0E0E0; }
+        .prose h1, .prose h2, .prose h3 { color: #E0E0E0; font-family: monospace; }
+        .prose strong { color: #FFB300; }
+        .prose blockquote { border-left-color: #00E5FF; color: #94A3B8; }
+    </style>
+</head>
+<body class="font-sans antialiased min-h-screen flex flex-col bg-sopcos-dark">
+
+    <nav class="w-full border-b border-sopcos-steel/20 p-6 flex justify-between items-center bg-sopcos-dark">
+        <a href="/" class="text-2xl font-mono font-bold tracking-tighter text-white hover:text-sopcos-amber transition">
+            &lt; SOPCOS_HOME
+        </a>
+        <div class="flex gap-2">
+            
+            <a href="http://localhost:1313/litepaper/" class="font-mono text-xs border border-sopcos-steel/30 px-2 py-1 rounded hover:bg-sopcos-steel/20 transition text-sopcos-amber border-sopcos-amber/50">
+                EN
+            </a>
+            
+            <a href="http://localhost:1313/tr/litepaper/" class="font-mono text-xs border border-sopcos-steel/30 px-2 py-1 rounded hover:bg-sopcos-steel/20 transition text-gray-500">
+                TR
+            </a>
+            
+        </div>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-4 py-12 max-w-4xl">
+        <article class="prose prose-invert prose-lg max-w-none prose-headings:font-bold prose-a:text-sopcos-cyan hover:prose-a:text-white">
+            <h1 class="text-4xl md:text-5xl mb-4 text-sopcos-amber"></h1>
+            <p class="text-xl text-gray-400 mb-8 border-b border-gray-800 pb-8"></p>
+            
+            <h1 id="sopcos-litepaper-v20">SOPCOS LITEPAPER v2.0</h1>
+<h3 id="the-industrial-trust-protocol">The Industrial Trust Protocol</h3>
+<hr>
+<h2 id="-executive-anchor">🛡️ Executive Anchor</h2>
+<blockquote>
+<p>&ldquo;Sopcos is the industrial operating layer that makes machine decisions legally ownable.&rdquo;</p>
+</blockquote>
+<p>Industry 4.0 focused on speed. Industry 5.0 focused on human-machine collaboration. Sopcos completes the missing piece: <strong>Liability</strong>.</p>
+<blockquote>
+<p>“We combine the speed of automation with the immutability of blockchain and the certainty of law.”</p>
+</blockquote>
+<hr>
+<h2 id="1-the-concept-why-sopcos-philosophy">1. The Concept: Why Sopcos? (Philosophy)</h2>
+<p>Current industrial systems focus on &ldquo;Data&rdquo;; Sopcos focuses on the <strong>&ldquo;Verdict.&rdquo;</strong></p>
+<p>When an accident occurs, SCADA logs can tell you <strong>what</strong> happened, but they cannot prove <strong>why</strong> it happened or <strong>who is responsible</strong> with legal certainty.</p>
+<p>The core thesis of Sopcos is this: <strong>Speed requires reflex, trust requires record, liability requires signature.</strong></p>
+<ul>
+<li><strong>Sopcos is not a SCADA;</strong> it is the notary that audits the SCADA.</li>
+<li><strong>Sopcos is not an AI project;</strong> it is a management layer that encloses AI within a secure cage.</li>
+</ul>
+<hr>
+<h2 id="2-the-architecture-ecosystem">2. The Architecture: Ecosystem</h2>
+<p>Sopcos is not a monolithic software, but an organism with four organs performing distinct tasks:</p>
+<h3 id="-21-synapse-the-reflex--hot-path">🔌 2.1. SYNAPSE (The Reflex &amp; Hot Path)</h3>
+<p><strong>&ldquo;The Hands and Reflexes of the System.&rdquo;</strong> The Edge unit that establishes physical contact with the machine.</p>
+<ul>
+<li><strong>Task:</strong> Reads the &ldquo;Reality&rdquo; defined by <strong>SIP-013</strong> and enforces <strong>SIP-001</strong> policies.</li>
+<li><strong>Pre-Law:</strong> Absolute rules enforcing physics and engineering limits, not open to human interpretation.</li>
+<li><strong>Hot Path:</strong> When it detects a critical safety violation (e.g., Temp &gt; Limit), it <strong>INTERVENES</strong> immediately, without latency (Real-time), deterministically, and without consulting anyone.</li>
+</ul>
+<h3 id="-22-axon-the-cognition--cold-path--optional">🧠 2.2. AXON (The Cognition &amp; Cold Path) — Optional</h3>
+<p><strong>&ldquo;The Reasoning Capability of the System.&rdquo;</strong> The &ldquo;Mind Room&rdquo; that engages for complex analysis and predictive maintenance.</p>
+<ul>
+<li><strong>Bicameral Mind:</strong> The conscious separation between the structure that decides (Synapse) and the structure that thinks but does not decide (Axon).</li>
+<li><strong>Cold Path:</strong> Analyzes non-urgent data (e.g., &ldquo;Vibration is increasing, the bearing might fail in a week&rdquo;).</li>
+<li><strong>Silent Alarm (Privacy):</strong> Thanks to <strong>SIP-017</strong>, it does not expose critical vulnerabilities to the chain; it notifies the administrator via an encrypted &ldquo;Red Phone&rdquo; line.</li>
+</ul>
+<h3 id="-23-core-ledger-the-immutable-record">🏛️ 2.3. CORE LEDGER (The Immutable Record)</h3>
+<p><strong>&ldquo;The Memory and Notary of the System.&rdquo;</strong> The L1 blockchain where verdicts generated by Synapse and Axon are sealed via the <strong>SIP-014 Vault</strong> architecture.</p>
+<ul>
+<li><strong>Role:</strong> It does not decide, it does not judge; it only <strong>proves and silences.</strong></li>
+<li><strong>Power:</strong> Even if your factory burns down, the proof of your decisions and warnings lives on this chain forever.</li>
+</ul>
+<h3 id="-24-idas-industrial-digital-assets">🆔 2.4. IDAS (Industrial Digital Assets)</h3>
+<p><strong>&ldquo;The Digital Identity of Machines.&rdquo;</strong> Devices in your factory are no longer just IP addresses, but Industrial NFTs with <strong>SIP-016</strong> standards.</p>
+<ul>
+<li><strong>Function:</strong> The device&rsquo;s maintenance history, ownership, and authorities (Licenses) are engraved into this identity.</li>
+<li>Fake parts or unauthorized software cannot enter the system.</li>
+</ul>
+<hr>
+<h2 id="3-the-workflow-how-it-works">3. The Workflow: How It Works</h2>
+<p>Sopcos routes data through two distinct paths (Hot/Cold) based on necessity:</p>
+<h3 id="-scenario-1-imminent-danger-hot-path">🔥 Scenario 1: Imminent Danger (Hot Path)</h3>
+<ul>
+<li><strong>Event:</strong> Boiler pressure spikes to 150 Bar (Limit: 140).</li>
+<li><strong>Synapse:</strong> Reflex engages. Does not consult AI.</li>
+<li><strong>Action:</strong> Sends &ldquo;Open Valve&rdquo; command to PLC in <strong>&lt;10ms</strong>.</li>
+<li><strong>Result:</strong> First creates safety, then records the event as &ldquo;Intervention Executed&rdquo; on the chain per <strong>SIP-002</strong>.</li>
+</ul>
+<h3 id="-scenario-2-deep-analysis-cold-path">❄️ Scenario 2: Deep Analysis (Cold Path)</h3>
+<ul>
+<li><strong>Event:</strong> Pressure is normal, but there is a strange frequency in the audio sensor.</li>
+<li><strong>Axon:</strong> Ingests data, compares with history. (Duration: Seconds/Minutes).</li>
+<li><strong>Action:</strong> Diagnoses &ldquo;Valve gasket 80% worn.&rdquo;</li>
+<li><strong>Result:</strong> Sends an encrypted, &ldquo;For Your Eyes Only&rdquo; maintenance order to the maintenance team via <strong>SIP-017</strong>.</li>
+</ul>
+<hr>
+<h2 id="4-the-guarantee-trust-and-liability">4. The Guarantee: Trust and Liability</h2>
+<p>Sopcos offers more than technology; it offers a <strong>&ldquo;Legal Security Shield&rdquo;</strong>:</p>
+<ul>
+<li><strong>Human Override:</strong> If an operator wants to bypass the system, Sopcos allows it, but per <strong>SIP-006</strong>, it requires a biometric signature: <strong>Confession of Liability (Irrevocable declaration of responsibility)</strong>. No one stops the system unless they say, &ldquo;I stopped it, and I accept the liability.&rdquo;</li>
+<li><strong>Proof of Foreknowledge:</strong> Did the system warn you before an accident occurred? <strong>SIP-005</strong> simulation records eliminate the &ldquo;I didn&rsquo;t know&rdquo; defense.</li>
+<li><strong>Data Sovereignty:</strong> Your data does not reside in third-party clouds, but in your own &ldquo;Vaults&rdquo; via <strong>SIP-014</strong>. Only the &ldquo;Fingerprint&rdquo; (Hash) of this data exists on the chain.</li>
+</ul>
+<hr>
+<h2 id="5-conclusion">5. Conclusion</h2>
+<p>Sopcos moves Artificial Intelligence and Blockchain beyond &ldquo;hype&rdquo; and transforms them into <strong>Industrial Infrastructure</strong>.</p>
+<p>We are not making your machines smarter; we are <strong>legalizing</strong> your relationship with them.</p>
+<p><strong>Sopcos: Trust, Executed.</strong></p>
+
+        </article>
+    </main>
+
+    <footer class="w-full border-t border-sopcos-steel/20 p-8 text-center text-gray-600 font-mono text-sm">
+        END_OF_FILE | SOPCOS v1.3
+    </footer>
+
+</body>
+</html>

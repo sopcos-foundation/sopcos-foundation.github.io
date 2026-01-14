@@ -1,0 +1,41 @@
+[hero_title_suffix]
+other = "İCRA EDİLDİ."
+
+[read_litepaper]
+other = "LITEPAPER v2.0 OKU"
+
+[init_demo]
+other = "> DEMO_BAŞLAT"
+
+[architecture_title]
+other = "MİMARİ_YAPI"
+
+[architecture_desc]
+other = "Sopcos tek parça bir yazılım değil; görevleri ayrılmış 4 organdan oluşan sibernetik bir organizmadır."
+
+[synapse_desc]
+other = "Refleks ve Sıcak Yol. <10ms gecikme."
+
+[axon_desc]
+other = "Akıl ve Soğuk Yol. Opsiyonel YZ entegrasyonu."
+
+[ledger_desc]
+other = "Değişmez Kayıt. Sorumluluk Kanıtı."
+
+[idas_desc]
+other = "Endüstriyel NFT. İncelemek için tıkla."
+
+[workflow_title]
+other = "İŞ_AKIŞI"
+
+[workflow_desc]
+other = "Sopcos, verinin aciliyetine göre iki farklı yol izler. Şalteri indirerek modları test edin."
+
+[guarantee_title]
+other = "GÜVENCE"
+
+[guarantee_desc]
+other = "SIP-017 Protokolü: Halka açık zincirde gizli iletişim."
+
+[guarantee_slide]
+other = "Şifreyi çözmek için kaydırın."
