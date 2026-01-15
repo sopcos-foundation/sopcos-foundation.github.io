@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SOPCOS — A Protocol for Accountable Autonomy</title>
+
+  <meta name="description" content="SOPCOS is a governance-first protocol for accountable automation. It defines how automated decisions are governed, audited, and held legally accountable." />
+  <meta name="keywords" content="accountable automation, industrial AI, governance protocol, liability, safety systems" />
+  <meta name="author" content="SOPCOS Foundation" />
+
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --fg: #e6e6e6;
+      --muted: #9aa0a6;
+      --accent: #cfd8ff;
+      --border: #22262c;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Inter, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      margin-top: 64px;
+      font-size: 1.8rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    p {
+      max-width: 760px;
+      font-size: 1.05rem;
+      margin: 16px 0;
+    }
+
+    .sub {
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    .clarifier {
+      margin-top: 24px;
+      padding-left: 16px;
+      border-left: 3px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    ul {
+      margin-top: 16px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    .principle {
+      margin-top: 24px;
+      padding: 16px;
+      border: 1px solid var(--border);
+      background: #0f1217;
+    }
+
+    .principle strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--accent);
+    }
+
+    .links {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 24px;
+      margin-bottom: 12px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 96px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>SOPCOS</h1>
+    <p class="sub">
+      A protocol for accountable autonomy.
+    </p>
+
+    <div class="clarifier">
+      Not a blockchain product.<br/>
+      Not an AI platform.<br/>
+      Not a DAO.
+    </div>
+
+    <h2>What SOPCOS Is</h2>
+    <p>
+      Modern automated systems decide faster than humans,
+      but responsibility remains implicit, fragmented, or disputed.
+    </p>
+    <p>
+      SOPCOS is a governance-first protocol that separates
+      decision from execution, recommendation from authority,
+      and automation from liability.
+    </p>
+    <p>
+      It ensures that when a system acts,
+      there is cryptographic proof of who defined the rules,
+      who authorized the risk, what was known at the time,
+      and who is responsible for the outcome.
+    </p>
+
+    <h2>What SOPCOS Is Not</h2>
+    <ul>
+      <li>It does not execute actions.</li>
+      <li>It does not replace human responsibility.</li>
+      <li>It does not equate code with law.</li>
+      <li>It does not grant autonomous authority.</li>
+    </ul>
+
+    <h2>Core Principles</h2>
+
+    <div class="principle">
+      <strong>Accountability Before Automation</strong>
+      Automation without accountability is not innovation. It is abdication.
+    </div>
+
+    <div class="principle">
+      <strong>Determinism Where It Matters</strong>
+      Safety-critical decisions must fail closed, not degrade probabilistically.
+    </div>
+
+    <div class="principle">
+      <strong>Human Liability Is Non-Transferable</strong>
+      Machines may recommend. Only humans authorize risk.
+    </div>
+
+    <div class="principle">
+      <strong>Evidence Must Outlive Memory</strong>
+      Logs are not evidence. Signed, immutable records are.
+    </div>
+
+    <h2>Why Now</h2>
+    <p>
+      AI and automation are increasingly present in industrial
+      and safety-critical environments.
+    </p>
+    <p>
+      When failures occur, liability is often assigned retroactively,
+      based on incomplete logs or contested interpretations.
+    </p>
+    <p>
+      SOPCOS addresses this gap by making responsibility explicit
+      at the moment decisions are made — not after damage occurs.
+    </p>
+
+    <h2>Who This Is For</h2>
+    <ul>
+      <li>Industrial system architects</li>
+      <li>Safety and compliance engineers</li>
+      <li>Regulators and auditors</li>
+      <li>Risk and governance teams</li>
+      <li>AI governance researchers</li>
+    </ul>
+
+    <div class="links">
+      <a href="https://github.com/sopcos-foundation/sopcos" target="_blank">
+        → Read the Protocol (GitHub)
+      </a>
+      <a href="https://github.com/sopcos-foundation/sopcos/tree/main/SIPs" target="_blank">
+        → SOPCOS Improvement Proposals (SIPs)
+      </a>
+      <a href="https://github.com/sopcos-foundation/sopcos/blob/main/SIPs/RELEASE_NOTES_v1.0.md" target="_blank">
+        → Release Notes v1.0
+      </a>
+    </div>
+
+    <footer>
+      SOPCOS Foundation · Governance-first protocol for accountable automation
+    </footer>
+
+  </div>
+</body>
+</html>
